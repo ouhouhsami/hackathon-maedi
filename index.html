@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<title>Réseau numérique pour le bien commun </title>
+<link rel="stylesheet" type="text/css" href="assets/icon.min.css">
+<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+<style type="text/css">
+  .footer.segment {
+    padding: 5em 0em;
+  }
+  #mapid { height: 180px; }
+</style>
+
+<script src="assets/jquery.js"></script>
+<script src="assets/semantic.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+
+
+</head>
+<body >
+
+  <!-- Page Contents -->
+  <div>
+    <div class="ui inverted vertical center aligned segment">
+
+      <div class="ui container">
+        <div class="ui text menu inverted">
+          <div class="ui inverted header item" style="color:white">Réseau numérique pour le bien commun</div>
+          <div class="right item">
+            <a class="ui inverted button">Connexion</a>&nbsp;
+            <a class="ui inverted button">Inscription</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui container">
+
+      <br>
+
+      <div class="ui form">
+        <div class="fields">
+          <div class="eight wide field">
+            <label>Filtrer par pays du porteur de projet</label>
+            <select >
+              <option>-----</option>
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Antarctica</option>
+              <option>Algeria</option>
+              <option>American Samoa</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Antigua and Barbuda</option>
+              <option>Azerbaijan</option>
+              <option>Argentina</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Bahamas</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Armenia</option>
+              <option>Barbados</option>
+              <option>Belgium</option>
+              <option>Bermuda</option>
+              <option>Bhutan</option>
+              <option>Bolivia</option>
+              <option>Bosnia and Herzegovina</option>
+              <option>Botswana</option>
+              <option>Bouvet Island</option>
+              <option>Brazil</option>
+              <option>Belize</option>
+              <option>British Indian Ocean Territory</option>
+              <option>Solomon Islands</option>
+              <option>British Virgin Islands</option>
+              <option>Brunei Darussalam</option>
+              <option>Bulgaria</option>
+              <option>Myanmar</option>
+              <option>Burundi</option>
+              <option>Belarus</option>
+              <option>Cambodia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Cape Verde</option>
+              <option>Cayman Islands</option>
+              <option>Central African</option>
+              <option>Sri Lanka</option>
+              <option>Chad</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Taiwan</option>
+              <option>Christmas Island</option>
+              <option>Cocos (Keeling) Islands</option>
+              <option>Colombia</option>
+              <option>Comoros</option>
+              <option>Mayotte</option>
+              <option>Republic of the Congo</option>
+              <option>The Democratic Republic Of The Congo</option>
+              <option>Cook Islands</option>
+              <option>Costa Rica</option>
+              <option>Croatia</option>
+              <option>Cuba</option>
+              <option>Cyprus</option>
+              <option>Czech Republic</option>
+              <option>Benin</option>
+              <option>Denmark</option>
+              <option>Dominica</option>
+              <option>Dominican Republic</option>
+              <option>Ecuador</option>
+              <option>El Salvador</option>
+              <option>Equatorial Guinea</option>
+              <option>Ethiopia</option>
+              <option>Eritrea</option>
+              <option>Estonia</option>
+              <option>Faroe Islands</option>
+              <option>Falkland Islands</option>
+              <option>South Georgia and the South Sandwich Islands</option>
+              <option>Fiji</option>
+              <option>Finland</option>
+              <option>Ãland Islands</option>
+              <option>France</option>
+              <option>French Guiana</option>
+              <option>French Polynesia</option>
+              <option>French Southern Territories</option>
+              <option>Djibouti</option>
+              <option>Gabon</option>
+              <option>Georgia</option>
+              <option>Gambia</option>
+              <option>Occupied Palestinian Territory</option>
+              <option>Germany</option>
+              <option>Ghana</option>
+              <option>Gibraltar</option>
+              <option>Kiribati</option>
+              <option>Greece</option>
+              <option>Greenland</option>
+              <option>Grenada</option>
+              <option>Guadeloupe</option>
+              <option>Guam</option>
+              <option>Guatemala</option>
+              <option>Guinea</option>
+              <option>Guyana</option>
+              <option>Haiti</option>
+              <option>Heard Island and McDonald Islands</option>
+              <option>Vatican City State</option>
+              <option>Honduras</option>
+              <option>Hong Kong</option>
+              <option>Hungary</option>
+              <option>Iceland</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Islamic Republic of Iran</option>
+              <option>Iraq</option>
+              <option>Ireland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>CÃŽte d'Ivoire</option>
+              <option>Jamaica</option>
+              <option>Japan</option>
+              <option>Kazakhstan</option>
+              <option>Jordan</option>
+              <option>Kenya</option>
+              <option>Democratic People's Republic of Korea</option>
+              <option>Republic of Korea</option>
+              <option>Kuwait</option>
+              <option>Kyrgyzstan</option>
+              <option>Lao People's Democratic Republic</option>
+              <option>Lebanon</option>
+              <option>Lesotho</option>
+              <option>Latvia</option>
+              <option>Liberia</option>
+              <option>Libyan Arab Jamahiriya</option>
+              <option>Liechtenstein</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Macao</option>
+              <option>Madagascar</option>
+              <option>Malawi</option>
+              <option>Malaysia</option>
+              <option>Maldives</option>
+              <option>Mali</option>
+              <option>Malta</option>
+              <option>Martinique</option>
+              <option>Mauritania</option>
+              <option>Mauritius</option>
+              <option>Mexico</option>
+              <option>Monaco</option>
+              <option>Mongolia</option>
+              <option>Republic of Moldova</option>
+              <option>Montserrat</option>
+              <option>Morocco</option>
+              <option>Mozambique</option>
+              <option>Oman</option>
+              <option>Namibia</option>
+              <option>Nauru</option>
+              <option>Nepal</option>
+              <option>Netherlands</option>
+              <option>Netherlands Antilles</option>
+              <option>Aruba</option>
+              <option>New Caledonia</option>
+              <option>Vanuatu</option>
+              <option>New Zealand</option>
+              <option>Nicaragua</option>
+              <option>Niger</option>
+              <option>Nigeria</option>
+              <option>Niue</option>
+              <option>Norfolk Island</option>
+              <option>Norway</option>
+              <option>Northern Mariana Islands</option>
+              <option>United States Minor Outlying Islands</option>
+              <option>Federated States of Micronesia</option>
+              <option>Marshall Islands</option>
+              <option>Palau</option>
+              <option>Pakistan</option>
+              <option>Panama</option>
+              <option>Papua New Guinea</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+              <option>Philippines</option>
+              <option>Pitcairn</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Guinea-Bissau</option>
+              <option>Timor-Leste</option>
+              <option>Puerto Rico</option>
+              <option>Qatar</option>
+              <option>RÃ©union</option>
+              <option>Romania</option>
+              <option>Russian Federation</option>
+              <option>Rwanda</option>
+              <option>Saint Helena</option>
+              <option>Saint Kitts and Nevis</option>
+              <option>Anguilla</option>
+              <option>Saint Lucia</option>
+              <option>Saint-Pierre and Miquelon</option>
+              <option>Saint Vincent and the Grenadines</option>
+              <option>San Marino</option>
+              <option>Sao Tome and Principe</option>
+              <option>Saudi Arabia</option>
+              <option>Senegal</option>
+              <option>Seychelles</option>
+              <option>Sierra Leone</option>
+              <option>Singapore</option>
+              <option>Slovakia</option>
+              <option>Vietnam</option>
+              <option>Slovenia</option>
+              <option>Somalia</option>
+              <option>South Africa</option>
+              <option>Zimbabwe</option>
+              <option>Spain</option>
+              <option>Western Sahara</option>
+              <option>Sudan</option>
+              <option>Suriname</option>
+              <option>Svalbard and Jan Mayen</option>
+              <option>Swaziland</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>Syrian Arab Republic</option>
+              <option>Tajikistan</option>
+              <option>Thailand</option>
+              <option>Togo</option>
+              <option>Tokelau</option>
+              <option>Tonga</option>
+              <option>Trinidad and Tobago</option>
+              <option>United Arab Emirates</option>
+              <option>Tunisia</option>
+              <option>Turkey</option>
+              <option>Turkmenistan</option>
+              <option>Turks and Caicos Islands</option>
+              <option>Tuvalu</option>
+              <option>Uganda</option>
+              <option>Ukraine</option>
+              <option>The Former Yugoslav Republic of Macedonia</option>
+              <option>Egypt</option>
+              <option>United Kingdom</option>
+              <option>Isle of Man</option>
+              <option>United Republic Of Tanzania</option>
+              <option>United States</option>
+              <option>U.S. Virgin Islands</option>
+              <option>Burkina Faso</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Venezuela</option>
+              <option>Wallis and Futuna</option>
+              <option>Samoa</option>
+              <option>Yemen</option>
+              <option>Serbia and Montenegro</option>
+              <option>Zambia</option>
+            </select>
+          </div>
+          <div class="eight wide field">
+          <label>Etat du projet</label>
+            <select>
+            <option>En attente de développeurs</option>
+            <option>Démarré</option>
+            <option>En ligne</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="ui centered cards">
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Jacques C.
+            </div>
+            <div class="meta">
+              Agence partenaire : Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              17 j'aime
+            </span>
+            <i class="user icon"></i>
+            3 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Arthur Q.
+            </div>
+            <div class="meta">
+              Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              3 j'aime
+            </span>
+            <i class="user icon"></i>
+            4 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Jeanne S.
+            </div>
+            <div class="meta">
+              Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              2 j'aime
+            </span>
+            <i class="user icon"></i>
+            1 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Julie E.
+            </div>
+            <div class="meta">
+              Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              4 j'aime
+            </span>
+            <i class="user icon"></i>
+            2 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Madelaine S.
+            </div>
+            <div class="meta">
+              Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              7 j'aime
+            </span>
+            <i class="user icon"></i>
+            2 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <div class="header">
+              Pierre M.
+            </div>
+            <div class="meta">
+              Ambassade de France - Zimbabwe
+            </div>
+            <div class="description">
+              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+            </div>
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              4 j'aime
+            </span>
+            <i class="user icon"></i>
+            3 développeurs
+          </div>
+          <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
+        </div>
+      </div>
+      <br>
+      <div id="mapid" style="width: 100%; height: 400px;"></div>
+      <script>
+
+        var mymap = L.map('mapid').setView([51.505, -0.09], 2);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3Vob3Voc2FtaSIsImEiOiJjaXlkN3g5YjAwMDdzMzNvZWxtMjM5ZnpzIn0.e-nUnpCfVbATJWZr2i5xuQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(mymap);
+        L.marker([51.5, -70.09]).addTo(mymap);
+        L.marker([41.5, 10.09]).addTo(mymap);
+        L.marker([31.5, 40.09]).addTo(mymap);
+        L.marker([31.5, 23.09]).addTo(mymap);
+        L.marker([21.5, 2.09]).addTo(mymap);
+        L.marker([11.5, 8.09]).addTo(mymap);
+
+      </script>
+      <br>
+      <a href="form.html">Ajouter votre projet</a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="three wide column">
+        <h4 class="ui inverted header">A propos</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Plan du site</a>
+          <a href="#" class="item">Nous contacter</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">Notre réseau</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Instituts français</a>
+          <a href="#" class="item">France Volontaires</a>
+          <a href="#" class="item">...</a>
+          <a href="#" class="item">...</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header">Nous suivre</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Twitter</a>
+          <a href="#" class="item">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+</body></html>
