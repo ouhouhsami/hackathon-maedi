@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-<title>Réseau numérique pour le bien commun </title>
-<link rel="stylesheet" type="text/css" href="assets/icon.min.css">
-<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-
-<style type="text/css">
-  .footer.segment {
-    padding: 5em 0em;
-  }
-  #mapid { height: 180px; }
-</style>
-
-<script src="assets/jquery.js"></script>
-<script src="assets/semantic.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-
-
-
-</head>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Engagements Durables</title>
+    <link rel="stylesheet" type="text/css" href="assets/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style type="text/css">
+      .footer.segment {
+        padding: 5em 0em;
+      }
+      #mapid { height: 180px; }
+    </style>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/semantic.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  </head>
 <body >
 
   <!-- Page Contents -->
   <div>
-    <div class="ui inverted vertical center aligned segment">
+    <div class="ui inverted vertical center aligned segment" style="background-color: #16a085">
 
-      <div class="ui container">
-        <div class="ui text menu inverted">
-          <div class="ui inverted header item" style="color:white">Réseau numérique pour le bien commun</div>
+      <div class="ui container" >
+        <div class="ui text menu inverted" >
+        <img src="assets/logo.png" style="width:50px"/>
+          <div class="ui inverted header item" style="color:white"><h1>Engagements Durables</h1></div>
           <div class="right item">
             <a class="ui inverted button">Connexion</a>&nbsp;
             <a class="ui inverted button">Inscription</a>
@@ -49,8 +44,8 @@
 
       <div class="ui form">
         <div class="fields">
-          <div class="eight wide field">
-            <label>Filtrer par pays du porteur de projet</label>
+          <div class="four wide field">
+            <label>Pays du porteur de projet</label>
             <select >
               <option>-----</option>
               <option>Afghanistan</option>
@@ -296,152 +291,172 @@
               <option>Zambia</option>
             </select>
           </div>
-          <div class="eight wide field">
-          <label>Etat du projet</label>
+          <div class="four wide field">
+          <label>Compétences recherchées</label>
             <select>
-            <option>En attente de développeurs</option>
-            <option>Démarré</option>
-            <option>En ligne</option>
+            <option>-----</option>
+            <option>Front-End</option>
+            <option>Back-End</option>
+            <option>Full Stack</option>
+            <option>Data-scientist</option>
+            <option>Designer</option>
+            </select>
+          </div>
+          <div class="eight wide field">
+          <label>Thématiques</label>
+            <select>
+            <option>-----</option>
+            <option>Environnement</option>
+            <option>Art/Culture</option>
+            <option>Gouvernement Ouvert</option>
+            <option>Civic Tech</option>
             </select>
           </div>
         </div>
       </div>
+      <br>
       <div class="ui centered cards">
         <div class="card">
           <div class="content">
             <img class="right floated mini ui image" src="/assets/nan.jpg">
             <div class="header">
-              Jacques C.
-            </div>
-            <div class="meta">
-              Agence partenaire : Ambassade de France - Zimbabwe
+              <a class="ui green ribbon label">En cours</a>
+              Anna P.
             </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"Site internet pour la conservation de photographies de la communauté cajun"</i>
+              <br><br>
+              <div class="ui label">
+              Arts & Culture
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              17 j'aime
+              4 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            3 développeurs
+            1 dev Front-End, 1 dev Back-End
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
         <div class="card">
           <div class="content">
-            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <img class="right floated mini ui image" src="/assets/kristy.png">
             <div class="header">
-              Arthur Q.
-            </div>
-            <div class="meta">
-              Ambassade de France - Zimbabwe
+            <a class="ui green ribbon label">En cours</a>
+              Laurence M.
             </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"Datavisualisation des auteurs de fictions francophones africains (David Mc Candness)"</i>
+              <br><br>
+              <div class="ui label">
+              Arts & Culture
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              3 j'aime
+              3 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            4 développeurs
+            1 Data-scientist
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
         <div class="card">
           <div class="content">
-            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <img class="right floated mini ui image" src="/assets/matthew.png">
             <div class="header">
-              Jeanne S.
-            </div>
-            <div class="meta">
-              Ambassade de France - Zimbabwe
+            <a class="ui orange ribbon label">Participez !</a>
+              Samuel G.
             </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"Blog recensant les données ouvertes des pays africains"</i>
+              <br><br>
+              <div class="ui label">
+              Open government
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              2 j'aime
+              2 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            1 développeurs
+            1 dev Front-End
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
         <div class="card">
           <div class="content">
-            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <img class="right floated mini ui image" src="/assets/kristy.png">
             <div class="header">
-              Julie E.
-            </div>
-            <div class="meta">
-              Ambassade de France - Zimbabwe
+            <a class="ui orange ribbon label">Participez !</a>
+              Pascale P.
             </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"Identifier les meilleurs repo github francophones"</i>
+              <br><br>
+              <div class="ui label">
+              Civic tech
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              4 j'aime
+              4 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            2 développeurs
+            1 Designer, 1 dev Back-End
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
         <div class="card">
           <div class="content">
-            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <img class="right floated mini ui image" src="/assets/rhinoceros.png">
             <div class="header">
-              Madelaine S.
-            </div>
-            <div class="meta">
-              Ambassade de France - Zimbabwe
+            <a class="ui orange ribbon label">Participez !</a>
+              Cécile L.
             </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"#HackAgainstTraffic pour combattre le traffic d'espèces protégées"</i>
+              <br><br>
+              <div class="ui label">
+              Environnement
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              7 j'aime
+              7 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            2 développeurs
+            2 dev Front-End
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
         <div class="card">
           <div class="content">
-            <img class="right floated mini ui image" src="/assets/nan.jpg">
+            <img class="right floated mini ui image" src="/assets/patrick.png">
             <div class="header">
+            <a class="ui blue ribbon label">Réalisé</a>
               Pierre M.
             </div>
-            <div class="meta">
-              Ambassade de France - Zimbabwe
-            </div>
             <div class="description">
-              <i>"Un projet hors norme de visualisation des données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <i>"Visualiser les données des votes des Français établis hors de France aux élections présidentielles"</i>
+              <br><br>
+              <div class="ui label">
+              Civic Tech
+              </div>
             </div>
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              4 j'aime
+              4 <i class="heart outline like icon"></i>
             </span>
             <i class="user icon"></i>
-            3 développeurs
+            1 dev Full-Stack
           </div>
           <div class="ui basic button"><a href="detail.html">En savoir plus</a></div>
         </div>
@@ -468,14 +483,14 @@
 
       </script>
       <br>
-      <a href="form.html">Ajouter votre projet</a>
+      <!--<a href="form.html">Ajouter votre projet</a>-->
     </div>
 
   </div>
 
 </div>
 
-<div class="ui inverted vertical footer segment">
+<div class="ui inverted vertical footer segment" style="background-color: #16a085">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">
       <div class="three wide column">
